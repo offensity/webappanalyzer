@@ -1,24 +1,28 @@
-name: Sync Fork and Create Release
+name: Semantic Release
 
 on:
   schedule:
-    - cron: '36 1 * * MON' # Scheduled to run at 1:36 AM on Mondays
-  workflow_dispatch: # On button click
+    # Runs every Monday at 00:00 UTC
+    - cron: '0 0 * * MON'
 
 jobs:
-  sync-and-release:
+  release:
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 
+          fetch-depth: 0  # Fetch the entire repository history
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20' 
+          node-version: '20'
 
       - name: Install dependencies
         run: npm ci
@@ -29,15 +33,7 @@ jobs:
       - name: Run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: semantic-release
+        run: npx semantic-release
 
-      - name: Sync Fork
-        id: fork-sync
-        uses: tgymnich/fork-sync@v1.8
-        with:
-          owner: enthec
-          base: main
-          head: main
-        continue-on-error: true
 
 
