@@ -87,7 +87,9 @@
       53
     ],
     "description": "MDS Brand is a provider of website, CRM, vrtual BDC, SEO, PPC, and live chat solutions for Marine, RV, Powersports, and automotive industries.",
-    "dom": "a[href*='mdsbrand.com/']",
+    "dom": [
+      "a[href*='mdsbrand.com/']"
+    ],
     "icon": "MDS Brand.png",
     "pricing": [
       "poa"
@@ -302,7 +304,9 @@
       "\\.MuiPaper-root"
     ],
     "description": "MUI(formerly Material UI) is a simple and customisable component library to build faster, beautiful, and more accessible React applications.",
-    "dom": "style[data-meta='MuiPaper'], div.MuiBox-root, div.MuiPaper-root, style[data-meta='MuiButton']",
+    "dom": [
+      "style[data-meta='MuiPaper'], div.MuiBox-root, div.MuiPaper-root, style[data-meta='MuiButton']"
+    ],
     "icon": "MUI.svg",
     "implies": [
       "React"
@@ -324,6 +328,7 @@
     "implies": [
       "Go"
     ],
+    "cpe": "cpe:2.3:a:go-macaron:macaron:*:*:*:*:*:*:*:*",
     "website": "https://go-macaron.com"
   },
   "MachoThemes NewsMag": {
@@ -331,7 +336,9 @@
       80
     ],
     "description": "MachoThemes Newsmag is a clean and modern magazine, news or blog WordPress theme.",
-    "dom": "link[href*='/wp-content/themes/Newsmag']",
+    "dom": [
+      "link[href*='/wp-content/themes/Newsmag']"
+    ],
     "icon": "MachoThemes.png",
     "pricing": [
       "freemium",
@@ -397,7 +404,9 @@
       29
     ],
     "description": "MageWorx Search Autocomplete extension offers an AJAX-based popup window that displays and updates relevant search results while a customer forms his or her query.",
-    "dom": "link[href*='MageWorx_SearchSuiteAutocomplete']",
+    "dom": [
+      "link[href*='MageWorx_SearchSuiteAutocomplete']"
+    ],
     "icon": "MageWorx.svg",
     "oss": true,
     "requires": [
@@ -527,7 +536,9 @@
         "spf\\.mandrillapp\\.com"
       ]
     },
-    "dom": "form#mc-embedded-subscribe-form, form[name*='mc-embedded-subscribe-form']",
+    "dom": [
+      "form#mc-embedded-subscribe-form, form[name*='mc-embedded-subscribe-form']"
+    ],
     "html": [
       "<input [^>]*id=\"mc-email\"\\;confidence:20",
       "<!-- Begin MailChimp Signup Form -->"
@@ -544,7 +555,9 @@
       "cdn-images\\.mailchimp\\.com/[^>]*\\.css",
       "chimpstatic\\.com/mcjs-connected"
     ],
-    "url": "^https?://(?:www\\.)?mailchi\\.mp",
+    "url": [
+      "^https?://(?:www\\.)?mailchi\\.mp"
+    ],
     "website": "https://mailchimp.com"
   },
   "MailChimp for WooCommerce": {
@@ -573,7 +586,9 @@
       32
     ],
     "description": "MailChimp for WordPress is an email marketing plugin that enables you to build subscriber lists.",
-    "dom": "link[href*='/wp-content/plugins/mailchimp-for-wp/']",
+    "dom": [
+      "link[href*='/wp-content/plugins/mailchimp-for-wp/']"
+    ],
     "icon": "MailChimp for WordPress.png",
     "implies": [
       "MailChimp"
@@ -634,7 +649,9 @@
       32
     ],
     "description": "MailerLite is an email marketing tool and website builder for businesses of all shapes and sizes.",
-    "dom": "link[href*='.mailerlite.com']",
+    "dom": [
+      "link[href*='.mailerlite.com']"
+    ],
     "icon": "MailerLite.svg",
     "js": {
       "MailerLiteObject": ""
@@ -754,7 +771,9 @@
       36
     ],
     "description": "MainAd is an international advertising technology company specialising in real-time bidding and programmatic ad retargeting.",
-    "dom": "iframe[src*='.mainadv.com/']",
+    "dom": [
+      "iframe[src*='.mainadv.com/']"
+    ],
     "icon": "MainAd.svg",
     "saas": true,
     "scriptSrc": [
@@ -777,7 +796,9 @@
       6
     ],
     "description": "MakeShop is a Japanese ecommerce platform.",
-    "dom": "link[href*='gigaplus.makeshop.jp'], img[src*='gigaplus.makeshop.jp']",
+    "dom": [
+      "link[href*='gigaplus.makeshop.jp'], img[src*='gigaplus.makeshop.jp']"
+    ],
     "icon": "MakeShop.svg",
     "js": {
       "MakeShop_TopSearch": "",
@@ -853,7 +874,9 @@
       66
     ],
     "description": "Mantine is an open-source UI framework and component library for React.",
-    "dom": "style[data-emotion='mantine-global'], style[data-emotion='mantine']",
+    "dom": [
+      "style[data-emotion='mantine-global'], style[data-emotion='mantine']"
+    ],
     "icon": "Mantine.svg",
     "implies": [
       "TypeScript"
@@ -870,7 +893,9 @@
     ],
     "cpe": "cpe:2.3:a:mantisbt:mantisbt:*:*:*:*:*:*:*:*",
     "description": "MantisBT is an open-source, web-based issue tracking system written in PHP with a MySQL database backend, designed to facilitate bug tracking and project management for software development teams.",
-    "dom": "link[rel='stylesheet'][href*='/css/ace-mantis.css']",
+    "dom": [
+      "link[rel='stylesheet'][href*='/css/ace-mantis.css']"
+    ],
     "icon": "MantisBT.png",
     "implies": [
       "MySQL"
@@ -935,7 +960,9 @@
       87
     ],
     "description": "MapPress is a WordPress plugin that provides easy integration of interactive maps into WordPress websites.",
-    "dom": "link[href*='wp-content/plugins/mappress-google-maps-for-wordpress/'], #mappress-leaflet-css, #mappress-css",
+    "dom": [
+      "link[href*='wp-content/plugins/mappress-google-maps-for-wordpress/'], #mappress-leaflet-css, #mappress-css"
+    ],
     "icon": "MapPress.png",
     "oss": true,
     "pricing": [
@@ -952,7 +979,9 @@
       35
     ],
     "description": "Mapbox GL JS is a JavaScript library that uses WebGL to render interactive maps from vector tiles and Mapbox styles.",
-    "dom": "link[href*='mapbox-gl.css'], div.mapboxgl-map",
+    "dom": [
+      "link[href*='mapbox-gl.css'], div.mapboxgl-map"
+    ],
     "icon": "Mapbox.svg",
     "js": {
       "mapboxgl.version": "^(.+)$\\;version:\\1\\;confidence:0"
@@ -968,7 +997,9 @@
       35
     ],
     "description": "Mapbox.js is a JavaScript library provided by Mapbox for working with interactive maps and geospatial data.",
-    "dom": "link[href*='api.mapbox.com/']",
+    "dom": [
+      "link[href*='api.mapbox.com/']"
+    ],
     "icon": "Mapbox.svg",
     "implies": [
       "Leaflet"
@@ -977,7 +1008,9 @@
     "scriptSrc": [
       "api\\.mapbox\\.com/mapbox\\.js/v([\\d\\.]+)/\\;version:\\1"
     ],
-    "scripts": "api\\.mapbox\\.com/mapbox\\.js/v([\\d\\.]+)/\\;version:\\1",
+    "scripts": [
+      "api\\.mapbox\\.com/mapbox\\.js/v([\\d\\.]+)/\\;version:\\1"
+    ],
     "website": "https://github.com/mapbox/mapbox.js"
   },
   "Mapp": {
@@ -1010,7 +1043,9 @@
       35
     ],
     "description": "Mapplic is a plugin for creating interactive maps based on simple image (jpg, png) or vector (svg) files.",
-    "dom": "div.mapplic-layer > div.mapplic-map-image",
+    "dom": [
+      "div.mapplic-layer > div.mapplic-map-image"
+    ],
     "icon": "Mapplic.svg",
     "pricing": [
       "low",
@@ -1028,7 +1063,9 @@
       35
     ],
     "description": "Maptalks is a light and plugable JavaScript library for integrated 2D/3D maps.",
-    "dom": "div.maptalks-wrapper",
+    "dom": [
+      "div.maptalks-wrapper"
+    ],
     "icon": "Maptalks.png",
     "js": {
       "map._eventMap": "",
@@ -1042,7 +1079,9 @@
       10
     ],
     "description": "Marchex is a B2B call and conversational analytics company.",
-    "dom": "link[href*='.marchex.io']",
+    "dom": [
+      "link[href*='.marchex.io']"
+    ],
     "icon": "Marchex.png",
     "pricing": [
       "mid",
@@ -1201,7 +1240,9 @@
       66
     ],
     "description": "Marko is HTML re-imagined as a language for building dynamic and reactive user interfaces.",
-    "dom": "#data-marko-key, html[data-framework='marko']",
+    "dom": [
+      "#data-marko-key, html[data-framework='marko']"
+    ],
     "icon": "Marko.svg",
     "implies": [
       "Node.js"
@@ -1212,7 +1253,9 @@
       "markoVars": ""
     },
     "oss": true,
-    "scripts": "\\.marko(\\.js)?",
+    "scripts": [
+      "\\.marko(\\.js)?"
+    ],
     "website": "https://markojs.com"
   },
   "Master Slider": {
@@ -1253,7 +1296,9 @@
       41
     ],
     "description": "MasterCard facilitates electronic funds transfers throughout the world, most commonly through branded credit cards, debit cards and prepaid cards.",
-    "dom": "[aria-labelledby='pi-mastercard'], [aria-labelledby='pi-master']",
+    "dom": [
+      "[aria-labelledby='pi-mastercard'], [aria-labelledby='pi-master']"
+    ],
     "icon": "Mastercard.svg",
     "website": "https://www.mastercard.com"
   },
@@ -1282,6 +1327,7 @@
     "headers": {
       "Server": "^Mastodon$"
     },
+    "cpe": "cpe:2.3:a:joinmastodon:mastodon:*:*:*:*:*:*:*:*",
     "icon": "Mastodon.svg",
     "website": "https://joinmastodon.org"
   },
@@ -1323,7 +1369,9 @@
       66
     ],
     "description": "Materialize CSS is a front-end framework that helps developers create responsive and mobile-first web applications. It is based on Google's Material Design guidelines.",
-    "dom": "link[href*='/materialize.min.css']",
+    "dom": [
+      "link[href*='/materialize.min.css']"
+    ],
     "icon": "Materialize CSS.svg",
     "oss": true,
     "scriptSrc": [
@@ -1344,6 +1392,7 @@
     "scriptSrc": [
       "([\\d.]+)?/mathjax\\.js\\;version:\\1"
     ],
+    "cpe": "cpe:2.3:a:mathjax:mathjax:*:*:*:*:*:*:*:*",
     "website": "https://www.mathjax.org"
   },
   "Matomo Analytics": {
@@ -1456,7 +1505,9 @@
       87
     ],
     "description": "Max Mega Menu is a popular WordPress plugin that enhances the menu functionality on WordPress websites.",
-    "dom": "link[href*='/wp-content/uploads/maxmegamenu/'], link[href*='/wp-content/plugins/megamenu-pro/'], link#megamenu-css, .mega-menu, .max-mega-menu, .mega-menu-megamenu, .mega-menu-primary, .mega-menu-item",
+    "dom": [
+      "link[href*='/wp-content/uploads/maxmegamenu/'], link[href*='/wp-content/plugins/megamenu-pro/'], link#megamenu-css, .mega-menu, .max-mega-menu, .mega-menu-megamenu, .mega-menu-primary, .mega-menu-item"
+    ],
     "icon": "Max Mega Menu.png",
     "js": {
       "megamenu": ""
@@ -1504,7 +1555,9 @@
       "geoip-js\\.com/.+/v([\\d\\.]+)/\\;version:\\1"
     ],
     "website": "https://www.maxmind.com",
-    "xhr": "\\.maxmind\\.com"
+    "xhr": [
+      "\\.maxmind\\.com"
+    ]
   },
   "MaxSite CMS": {
     "cats": [
@@ -1588,7 +1641,9 @@
       36
     ],
     "description": "Media.net is an advertising company focused on providing monetization products to digital publishers.",
-    "dom": "link[href*='.media.net']",
+    "dom": [
+      "link[href*='.media.net']"
+    ],
     "icon": "Media.net.svg",
     "saas": true,
     "scriptSrc": [
@@ -1665,7 +1720,9 @@
     "scriptSrc": [
       "medium\\.com"
     ],
-    "url": "^https?://(?:www\\.)?medium\\.com",
+    "url": [
+      "^https?://(?:www\\.)?medium\\.com"
+    ],
     "website": "https://medium.com"
   },
   "Meebo": {
@@ -1684,7 +1741,9 @@
       72
     ],
     "description": "Meeting Scheduler is a schedule appointments widget.",
-    "dom": "a[href*='bookmenow.info/book']",
+    "dom": [
+      "a[href*='bookmenow.info/book']"
+    ],
     "icon": "Meeting Scheduler.png",
     "scriptSrc": [
       "bookmenow\\.info/(?:runtime|main).+\\.js"
@@ -1712,7 +1771,9 @@
       29
     ],
     "description": "Meilisearch is a search engine created by Meili, a software development company based in France.",
-    "dom": "span.meilisearch-autocomplete",
+    "dom": [
+      "span.meilisearch-autocomplete"
+    ],
     "icon": "Meilisearch.svg",
     "js": {
       "MeiliSearch": "",
@@ -1736,7 +1797,9 @@
       87
     ],
     "description": "Meks Simple Flickr Widget is a WordPress plugin created by Meks. This plugin is designed to help WordPress website owners easily integrate Flickr photo streams into their websites.",
-    "dom": "link[href*='/wp-content/plugins/meks-simple-flickr-widget/'], link#meks-flickr-widget-css",
+    "dom": [
+      "link[href*='/wp-content/plugins/meks-simple-flickr-widget/'], link#meks-flickr-widget-css"
+    ],
     "oss": true,
     "requires": [
       "WordPress"
@@ -1812,7 +1875,9 @@
     "scriptSrc": [
       "memberstack\\.js"
     ],
-    "url": "^https?//.+\\.memberstack\\.io",
+    "url": [
+      "^https?//.+\\.memberstack\\.io"
+    ],
     "website": "https://www.memberstack.io"
   },
   "Mention Me": {
@@ -1838,7 +1903,9 @@
       93
     ],
     "description": "Menufy is an online and mobile meal ordering service.",
-    "dom": "a[href*='.menufy.com/'][target='_blank']",
+    "dom": [
+      "a[href*='.menufy.com/'][target='_blank']"
+    ],
     "icon": "Menufy.png",
     "pricing": [
       "payg"
@@ -1903,7 +1970,9 @@
       87
     ],
     "description": "The Mesmerize Companion is a WordPress plugin that enhances the Mesmerize theme by adding drag-and-drop page builder functionality.",
-    "dom": "link[href*='/wp-content/plugins/mesmerize-companion/'], link#companion-bundle-css",
+    "dom": [
+      "link[href*='/wp-content/plugins/mesmerize-companion/'], link#companion-bundle-css"
+    ],
     "oss": true,
     "requires": [
       "WordPress"
@@ -1918,7 +1987,9 @@
       87
     ],
     "description": "MetaSlider is a WordPress plugin for adding responsive sliders and carousels to websites.",
-    "dom": "link[href*='/wp-content/plugins/ml-slider/'], link#metaslider-pro-public-css",
+    "dom": [
+      "link[href*='/wp-content/plugins/ml-slider/'], link#metaslider-pro-public-css"
+    ],
     "icon": "MetaSlider.svg",
     "pricing": [
       "freemium",
@@ -2032,7 +2103,9 @@
     ],
     "description": "Set a custom profile image for a user using the standard WordPress media upload tool.",
     "icon": "Metronet Profile Picture.png",
-    "dom": "link[href*='/wp-content/plugins/metronet-profile-picture/']",
+    "dom": [
+      "link[href*='/wp-content/plugins/metronet-profile-picture/']"
+    ],
     "oss": true,
     "requires": [
       "WordPress"
@@ -2047,7 +2120,9 @@
       72
     ],
     "description": "Mews is a hospitalitions service that enables hotels to track their bookings.",
-    "dom": "a[href*='.mews.li/'][target='_blank']",
+    "dom": [
+      "a[href*='.mews.li/'][target='_blank']"
+    ],
     "icon": "Mews.png",
     "js": {
       "Mews": ""
@@ -2095,7 +2170,9 @@
       "<input[^>]+name=\"__VIEWSTATE"
     ],
     "icon": "Microsoft ASP.NET.svg",
-    "url": "\\.aspx?(?:$|\\?)",
+    "url": [
+      "\\.aspx?(?:$|\\?)"
+    ],
     "website": "https://www.asp.net"
   },
   "Microsoft Advertising": {
@@ -2107,7 +2184,9 @@
       "_uetvid": "\\w+"
     },
     "description": "Microsoft Advertising is an online advertising platform developed by Microsoft.",
-    "dom": "link[href*='.bing.com']",
+    "dom": [
+      "link[href*='.bing.com']"
+    ],
     "icon": "Microsoft.svg",
     "js": {
       "UET": "",
@@ -2346,7 +2425,9 @@
       1
     ],
     "description": "Open Source drag and drop style hosted CMS system.",
-    "dom": "meta[content='Microweber']",
+    "dom": [
+      "meta[content='Microweber']"
+    ],
     "icon": "Microweber.svg",
     "oss": true,
     "pricing": [
@@ -2356,6 +2437,7 @@
     "scriptSrc": [
       "[Mm]icroweber(?:\\/includes)?(?:\\/api)?(?:\\/libs)?[\\w\\.\\/-]{0,45}(?:\\.min)?\\.js"
     ],
+    "cpe": "cpe:2.3:a:microweber:microweber:*:*:*:*:*:*:*:*",
     "website": "https://microweber.com"
   },
   "Miestro": {
@@ -2501,7 +2583,9 @@
       87
     ],
     "description": "Social Login with Discord, Facebook, Google, Twitter, LinkedIn and other apps.",
-    "dom": "link[href*='/wp-content/plugins/miniorange-login-openid/'], #js-cookie-script-js, #mo-social-login-script-js",
+    "dom": [
+      "link[href*='/wp-content/plugins/miniorange-login-openid/'], #js-cookie-script-js, #mo-social-login-script-js"
+    ],
     "icon": "MiniOrange Login.png",
     "oss": true,
     "requires": [
@@ -2571,7 +2655,9 @@
     ],
     "saas": true,
     "website": "https://miso.ai",
-    "xhr": "\\.askmiso\\.com/"
+    "xhr": [
+      "\\.askmiso\\.com/"
+    ]
   },
   "Misskey": {
     "cats": [
@@ -2585,6 +2671,7 @@
     "meta": {
       "application-name": "Misskey"
     },
+    "cpe": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
     "website": "https://join.misskey.page/"
   },
   "Mithril": {
@@ -2596,7 +2683,8 @@
     "icon": "Mithril.svg",
     "oss": true,
     "scriptSrc": [
-      "(?:((?:\\d+\\.)+\\d+)\\/)?mithril(?:[\\.-]min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1\\2"
+      "mithril(?:[\\.-]min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1",
+      "(?:((?:\\d+\\.)+\\d+)\\/)?mithril(?:[\\.-]min)?\\.js\\;version:\\1"
     ],
     "website": "https://mithril.js.org/"
   },
@@ -2818,7 +2906,8 @@
       "Modernizr._version": "^(.+)$\\;version:\\1"
     },
     "scriptSrc": [
-      "([\\d.]+)?/modernizr(?:\\.([\\d.]+))?.*\\.js\\;version:\\1?\\1:\\2"
+      "modernizr(?:\\.([\\d.]+))?.*\\.js\\;version:\\1",
+      "([\\d.]+)?/modernizr.*\\.js\\;version:\\1"
     ],
     "website": "https://modernizr.com"
   },
@@ -2827,7 +2916,9 @@
       105
     ],
     "description": "ModiFace is a provider of Augmented Reality technology for the beauty industry.",
-    "dom": "iframe[src*='.modiface.com/']",
+    "dom": [
+      "iframe[src*='.modiface.com/']"
+    ],
     "headers": {
       "content-security-policy": "\\.modiface\\.com"
     },
@@ -2920,6 +3011,7 @@
     "implies": [
       "Perl"
     ],
+    "cpe": "cpe:2.3:a:mojolicious:mojolicious:*:*:*:*:*:*:*:*",
     "website": "https://mojolicio.us"
   },
   "Mokka": {
@@ -3292,7 +3384,9 @@
       71
     ],
     "description": "Moshimo is a free affiliate service for individuals.",
-    "dom": "link[href*='i.moshimo.com'], img[src*='i.moshimo.com']",
+    "dom": [
+      "link[href*='i.moshimo.com'], img[src*='i.moshimo.com']"
+    ],
     "icon": "Moshimo.png",
     "scriptSrc": [
       "\\.moshimo\\.com/af/"
@@ -3391,7 +3485,9 @@
     "meta": {
       "author": "Mozard"
     },
-    "url": "/mozard/!suite",
+    "url": [
+      "/mozard/!suite"
+    ],
     "website": "https://mozard.nl"
   },
   "Mulberry": {
@@ -3538,7 +3634,9 @@
       17
     ],
     "description": "MyFonts is a digital fonts distributor, based in Woburn, Massachusetts.",
-    "dom": "link[href*='.myfonts.net']",
+    "dom": [
+      "link[href*='.myfonts.net']"
+    ],
     "headers": {
       "content-security-policy": "\\.myfonts\\.net"
     },
@@ -3548,7 +3646,9 @@
       "onetime"
     ],
     "website": "https://www.myfonts.com",
-    "xhr": "\\.myfonts\\.net/"
+    "xhr": [
+      "\\.myfonts\\.net/"
+    ]
   },
   "MyLiveChat": {
     "cats": [
@@ -3653,7 +3753,9 @@
       51
     ],
     "description": "MyWebsite Now is a website builder designed for getting online quickly.",
-    "dom": "img[src*='/-_-/res/']",
+    "dom": [
+      "img[src*='/-_-/res/']"
+    ],
     "icon": "MyWebsite.svg",
     "implies": [
       "React",
@@ -3697,7 +3799,9 @@
       51
     ],
     "description": "Mysitefy is a digital platform for B2B enterprises. It provides companies with a closed-loop digital application system from website building to marketing, to customer and order management.",
-    "dom": "img[src*='//cdn.mysitefy.com/']",
+    "dom": [
+      "img[src*='//cdn.mysitefy.com/']"
+    ],
     "icon": "Mysitefy.png",
     "pricing": [
       "recurring"
@@ -3728,7 +3832,9 @@
       80
     ],
     "description": "News Portal Lite is child theme of News Portal ultimate magazine WordPress theme by MysteryThemes.",
-    "dom": "link[href*='/wp-content/themes/news-portal-lite/']",
+    "dom": [
+      "link[href*='/wp-content/themes/news-portal-lite/']"
+    ],
     "excludes": [
       "MysteryThemes News Portal"
     ],
@@ -3747,7 +3853,9 @@
       80
     ],
     "description": "News Portal Mag is child theme of News Portal ultimate magazine WordPress theme by MysteryThemes.",
-    "dom": "link[href*='/wp-content/themes/news-portal-mag/']",
+    "dom": [
+      "link[href*='/wp-content/themes/news-portal-mag/']"
+    ],
     "excludes": [
       "MysteryThemes News Portal"
     ],
@@ -3801,7 +3909,9 @@
     "description": "mdBook is a utility to create modern online books from Markdown files.",
     "icon": "mdBook.svg",
     "oss": true,
-    "scripts": "localStorage\\.getItem\\('mdbook-(?:sidebar|theme)'\\)",
+    "scripts": [
+      "localStorage\\.getItem\\('mdbook-(?:sidebar|theme)'\\)"
+    ],
     "website": "https://github.com/rust-lang/mdBook"
   },
   "metisMenu": {
@@ -3827,7 +3937,9 @@
       1
     ],
     "description": "microCMS is a Japan-based headless CMS that enables editors and developers to build delicate sites and apps.",
-    "dom": "img[src*='.microcms-assets.io/']",
+    "dom": [
+      "img[src*='.microcms-assets.io/']"
+    ],
     "icon": "microCMS.svg",
     "pricing": [
       "freemium",
@@ -3837,7 +3949,9 @@
     ],
     "saas": true,
     "website": "https://microcms.io",
-    "xhr": "\\.microcms\\.io"
+    "xhr": [
+      "\\.microcms\\.io"
+    ]
   },
   "mini_httpd": {
     "cats": [
@@ -3847,6 +3961,7 @@
       "Server": "mini_httpd(?:/([\\d.]+))?\\;version:\\1"
     },
     "icon": "mini_httpd.png",
+    "cpe": "cpe:2.3:a:acme:mini_httpd:*:*:*:*:*:*:*:*",
     "website": "https://acme.com/software/mini_httpd"
   },
   "mirrAR": {
