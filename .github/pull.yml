@@ -1,16 +1,16 @@
 version: "1"
 rules:
-  - base: dev
+  - base: update-from-upstream
     upstream: enthec/webappanalyzer:main    # the owner of upstream repo
     mergeMethod: rebase
     mergeUnstable: false
-  - base: dev
+  - base: update-from-upstream
     upstream: main        # Required. Can be a branch in the same forked repo.
     assignees: # Optional
       - berishaerblin
     reviewers: # Optional
-      - berishaerblin
+      - mlec1
     conflictReviewers: # Optional, on merge conflict assign a reviewer
-      - berishaerblin
+      - mlec1
 label: ":arrow_heading_down: pull"  # Optional
 conflictLabel: "merge-conflict"     # Optional, on merge conflict assign a custom label, Default: merge-conflict
