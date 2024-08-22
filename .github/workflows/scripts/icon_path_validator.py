@@ -38,6 +38,9 @@ class IconValidator:
                     json_icons.add(value)
         return json_icons
 
+def test():
+    print("Semantic release test!")
+    print("Another print!")
 
 if __name__ == '__main__':
     IconValidator().validate()
