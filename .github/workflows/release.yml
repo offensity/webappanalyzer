@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     branches:
-      - master # or main
+      - main
 
 permissions:
   contents: read # for checkout
@@ -26,7 +26,9 @@ jobs:
         with:
           node-version: "lts/*"
       - name: Install dependencies
-        run: npm install  # Install Semantic Release and plugins
+        run: npm clean-install
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
