@@ -144,6 +144,7 @@ class PricingValidator(AbstractValidator):
         return True
 
     def get_type(self) -> list[Type]:
+        print("hola")
         return [list]
 
 
