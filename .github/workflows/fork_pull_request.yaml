@@ -1,0 +1,46 @@
+name: Sync Fork
+
+on:
+  schedule:
+    - cron: '0 1 * * 1' # Runs every Monday at 1 AM
+  workflow_dispatch: # on button click
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check for existing PR
+        id: check_pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: prs } = await github.rest.pulls.list({
+              owner: 'offensity',
+              repo: 'webappanalyzer',
+              head: 'enthec:main',
+              base: 'main',
+              state: 'open',
+            });
+            if (prs.length > 0) {
+              return prs[0].html_url; // Return the URL of the existing PR
+            }
+            return ''; // No open PR found
+
+          result-encoding: string
+
+      - name: Sync Fork
+        if: steps.check_pr.outputs.result == '' # Only run if no PR exists
+        uses: tgymnich/fork-sync@v2.0.10
+        with:
+          owner: enthec
+          repo: webappanalyzer
+          base: main
+          head: main
+          auto_merge: false
+          merge_method: rebase
+          pr_title: "feat: Update from origin"
+
+      - name: Skip if PR exists
+        if: steps.check_pr.outputs.result != ''
+        run: echo "PR already exists, skipping sync."
