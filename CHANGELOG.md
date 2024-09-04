@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/offensity/webappanalyzer/compare/1.0.0...1.1.0) (2024-09-04)
+
+
+### Bug Fixes
+
+* made release to run only on main branch ([302b205](https://github.com/offensity/webappanalyzer/commit/302b20583efae767f1b9c6e4ed7c363234ea8656))
+
+
+### Features
+
+* run release workflow after other workflows ([1b03a17](https://github.com/offensity/webappanalyzer/commit/1b03a1790c12075484ada1787b2472b8f5370eef))
+
 # 1.0.0 (2024-09-02)
 
 
