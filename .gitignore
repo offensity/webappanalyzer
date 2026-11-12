@@ -3,4 +3,6 @@ node_modules
 .project
 .settings
 
+__pycache__/
+
 .sync/
